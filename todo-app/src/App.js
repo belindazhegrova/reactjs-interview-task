@@ -1,11 +1,13 @@
-import { Col, Row } from "antd";
+import "./App.css";
+import Header from "./layouts/Header";
+import RenderRoutes from "./routes";
 
 function App() {
   return (
-    <Row>
-      <Col span={12}>container 1</Col>
-      <Col span={12}>container 2</Col>
-    </Row>
+    <>
+      <Header />
+      <RenderRoutes />
+    </>
   );
 }
 
