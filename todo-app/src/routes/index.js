@@ -16,8 +16,11 @@ const RenderRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/create-notes" element={<CreateNotes />} />
+        <Route path="/" element={<Main />}>
+          {" "}
+          //main
+          <Route path="create-notes" element={<CreateNotes />} /> //Nested Route
+        </Route>
       </Routes>
     </BrowserRouter>
   );

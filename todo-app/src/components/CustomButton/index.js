@@ -2,10 +2,11 @@ import React from "react";
 import { Button, Divider } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 
-const CustomButton = () => {
+const CustomButton = ({ handleOpenCreateNotes }) => {
   return (
     <Button
       type="primary"
+      onClick={handleOpenCreateNotes}
       style={{
         width: "218px",
         height: "32px",
